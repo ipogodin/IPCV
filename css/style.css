@@ -1,0 +1,255 @@
+  /* Reset styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body styles */
+    body {
+        background-color: #fff;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        border: 2px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 10px;
+        border: 2px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Header styles */
+    header {
+      background-color: #d3d3d3;
+      color: #444;
+      padding: 2rem;
+      text-align: center;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+
+    header h1 {
+      margin-bottom: 0.5rem;
+      font-size: 3rem;
+      font-weight: 600;
+    }
+
+    header p {
+      margin-bottom: 0;
+      font-size: 1.2rem;
+      font-weight: 400;
+    }
+
+    /* Main styles */
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+
+    h2 {
+      margin-top: 2rem;
+      font-size: 2rem;
+      font-weight: 600;
+    }
+
+    h3 {
+      margin-top: 1.5rem;
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+
+    .position {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-top: 0.5rem;
+    }
+
+    .company {
+      font-size: 1rem;
+      font-weight: 400;
+    }
+
+    .timeframe {
+      font-size: 1rem;
+      font-weight: 400;
+      color: #777;
+      margin-top: 0.5rem;
+    }
+
+    /* responsibilities are collapsible */
+
+    .responsibilities {
+      margin-top: 20px;
+    }
+
+    .responsibility {
+      margin-bottom: 10px;
+      position: relative;
+      list-style: none;
+      padding-left: 30px;
+      padding-right:150px;
+    }
+
+    /* Style for the responsibility content */
+    .responsibility-content {
+      height: 0;
+      overflow: hidden;
+      transition: height 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    /* Style for the expanded content */
+    .responsibility-expanded {
+      height: auto;
+      overflow: visible;
+      transition: height 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    /* Style for the expand/collapse button */
+    .expand-button {
+      position: absolute;
+      top: 0;
+      left: -20px;
+      font-size: 16px;
+      cursor: pointer;
+      padding-left: 30px;
+    }
+
+
+    /* end of responsibilities */
+
+     hr {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+     }
+
+    .team {
+      margin-top: 10px;
+      font-size: 16px;
+      color: #111;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 10px;
+    }
+
+    .team-name {
+        font-weight: 550;
+        font-color: #000;
+        padding-bottom: 0.6rem;
+    }
+
+
+    .education {
+      margin-top: 2rem;
+    }
+
+    .degree {
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+
+    .university {
+      font-size: 1rem;
+      font-weight: 400;
+    }
+
+    .dates {
+      font-size: 1rem;
+      font-weight: 400;
+      color: #777;
+      margin-top: 0.5rem;
+    }
+
+    .skills {
+      margin-top: 50px;
+    }
+
+    .skills h2 {
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+
+    .skills ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .skills li {
+      display: inline-block;
+      background-color: #eee;
+      border-radius: 5px;
+      padding: 8px 15px;
+      margin: 0 10px 10px 0;
+      font-size: 16px;
+      font-weight: 400;
+      color: #444;
+      box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    }
+
+    .job {
+      margin-top: 50px;
+      padding: 20px;
+      background-color: #f5f5f5;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .job h3 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .job .company {
+      font-size: 16px;
+      font-weight: 400;
+      margin-bottom: 5px;
+    }
+
+    .job .timeframe {
+      font-size: 16px;
+      font-weight: 400;
+      margin-bottom: 10px;
+    }
+
+    .job .responsibilities {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .job .responsibilities li {
+      margin-bottom: 5px;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.5;
+    }
+
+    .sup {
+      position: relative;
+      bottom: 1ex;
+      font-size: 80%;
+    }
+
+    .collapse-all {
+      float: right;
+      background-color: #eee;
+      border-radius: 5px;
+      border-color: #eee;
+      padding: 4px 7px;
+      font-size: 12px;
+      font-weight: 400;
+      margin: 0 10px 10px 0;
+      color: #888;
+      box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    }
