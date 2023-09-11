@@ -5,6 +5,11 @@
       box-sizing: border-box;
     }
 
+    a:hover {
+        text-decoration: underline;
+        color: #FF8400;
+    }
+
     /* Body styles */
     body {
         background-color: #fff;
@@ -14,6 +19,8 @@
         border: 2px solid #ccc;
         border-radius: 10px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
     }
 
     .container {
@@ -103,6 +110,31 @@
       height: 0;
       overflow: hidden;
       transition: height 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+      list-style-type: none;
+      padding-left: 1.5em; /* Adjust the spacing to align bullet points */
+    }
+
+    .responsibility-content span {
+        display: block; /* Makes the spans behave like block elements (similar to <div>) */
+        position: relative;
+        padding-left: 30px; /* Provide space for the custom bullet */
+    }
+
+    .responsibility-content span::before {
+        content: ''; /* This creates a pseudo element for the bullet */
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%); /* Center the bullet vertically */
+        width: 10px;
+        height: 10px;
+        background-color: #333; /* Bullet color */
+        border-radius: 50%; /* Makes the bullet circular */
+    }
+
+    .responsibility-content span:hover::before {
+        background-color: #007BFF; /* Change bullet color on hover */
     }
 
     /* Style for the expanded content */
@@ -202,6 +234,7 @@
       background-color: #f5f5f5;
       border-radius: 10px;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
     }
 
     .job h3 {
@@ -252,4 +285,24 @@
       margin: 0 10px 10px 0;
       color: #888;
       box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    }
+
+    @media (max-width: 600px) {
+        .container {
+            padding: 5px;
+            max-width: 100%;
+        }
+        header, main {
+            padding: 1rem;
+        }
+        header h1 {
+            font-size: 2rem;
+        }
+        h2, h3 {
+            margin-top: 1rem;
+        }
+        .skills li {
+            margin: 5px;
+            font-size: 14px;
+        }
     }
